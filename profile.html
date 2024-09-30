@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Anggota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-page" id="profile-page">
+        <h1 id="profile-name"></h1>
+        <p><strong>Tanggal Lahir:</strong> <span id="profile-birthdate"></span></p>
+        <p><strong>Hobi:</strong> <span id="profile-hobby"></span></p>
+        <p><strong>Film Favorit:</strong> <span id="profile-favorite-movie"></span></p>
+        <p><strong>Idola:</strong> <span id="profile-idol"></span></p>
+        <a href="index.html" class="back-button">Kembali</a>
+    </div>
+
+    <script>
+        // Mengambil parameter dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const birthDate = urlParams.get('birthDate');
+        const hobby = urlParams.get('hobby');
+        const favoriteMovie = urlParams.get('favoriteMovie');
+        const idol = urlParams.get('idol');
+
+        // Mengisi elemen dengan informasi profil
+        document.getElementById('profile-name').textContent = name;
+        document.getElementById('profile-birthdate').textContent = birthDate;
+        document.getElementById('profile-hobby').textContent = hobby;
+        document.getElementById('profile-favorite-movie').textContent = favoriteMovie;
+        document.getElementById('profile-idol').textContent = idol;
+
+        // Mengatur background berdasarkan idola
+        const profilePage = document.getElementById('profile-page');
+        const backgrounds = {
+            'Cristiano Ronaldo': '#FFDDC1', // Peach
+            'Emma Watson': '#FFABAB',       // Light Coral
+            'Keanu Reeves': '#FFC3A0',      // Light Pink
+            'Matt Damon': '#B9FBC0',        // Light Green
+            'Zoe Saldana': '#C2C2F0',        // Light Blue
+            'Leonardo DiCaprio': '#D3B0C6'   // Light Purple
+        };
+        profilePage.style.backgroundColor = backgrounds[idol] || '#FFFFFF'; // Default to white if no match
+    </script>
+</body>
+</html>
+
+
+
+
+

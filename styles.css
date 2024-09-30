@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin: 20px;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.title, .subtitle {
+    font-size: 24px; /* Ukuran font sama untuk keduanya */
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 5px;
+}
+
+.members p {
+    font-size: 16px; /* Ukuran font lebih kecil dari title dan subtitle */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 800px; /* Menyusutkan lebar kontainer tombol */
+    margin: 0 auto; /* Menyusun tombol di tengah halaman */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%; /* Mengatur lebar tombol group */
+}
+
+.button-group.left {
+    align-items: flex-start; /* Menempatkan tombol-tombol di kiri */
+}
+
+.button-group.right {
+    align-items: flex-end; /* Menempatkan tombol-tombol di kanan */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #444;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 100%; /* Memastikan tombol memenuhi lebar kontainer */
+    max-width: 250px; /* Maksimum lebar tombol */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+/* CSS untuk halaman profil */
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: black; /* Warna teks agar kontras dengan latar belakang */
+    font-size: 18px;
+}
+
+.profile-page h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-page p {
+    margin-bottom: 5px;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #666;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #888;
+}
+
+
+
+
+
+
+
+
+
