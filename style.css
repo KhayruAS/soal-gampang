@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow-y: scroll; /* Menambahkan scroll */
+}
+
+.container {
+    text-align: left; /* Mengatur teks ke kiri */
+    width: 300px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center; /* Judul di tengah */
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Mengatur label menjadi block untuk perataan */
+    margin-left: 10px; /* Memberi jarak ke kiri */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.feedback {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
